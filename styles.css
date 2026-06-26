@@ -46,6 +46,31 @@ body {
   padding: 0 20px 40px;
 }
 
+.nav-card, .intro-card, .form-card, .table-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.grid-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.nav-card {
+  flex: 1 1 260px;
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-card:hover {
+  transform: translateY(-3px);
+}
+
 
 .secondary-link {
   color: #f1faee;
@@ -55,6 +80,44 @@ body {
   border-radius: 999px;
 }
 
+
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.card-item {
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px;
+  min-width: 220px;
+  flex: 1 1 220px;
+  color: #102a43;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  gap: 12px;
+}
+
+.card-item strong {
+  font-size: 1rem;
+}
+
+.card-item p {
+  margin: 0;
+  color: #1d3557;
+}
+
+.flexbox-controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
 
 button {
   border: none;
