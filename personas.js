@@ -24,3 +24,38 @@ function renderPeople() {
     `)
     .join('');
 }
+
+function addPerson(event) {
+  event.preventDefault();
+
+  const nombre = document.getElementById('nombre').value.trim();
+  const apellido = document.getElementById('apellido').value.trim();
+  const edad = Number(document.getElementById('edad').value);
+  const altura = Number(document.getElementById('altura').value);
+  const peso = Number(document.getElementById('peso').value);
+
+  if (!nombre || !apellido || !edad || !altura || !peso) {
+    return;
+  }
+
+  people.push({ nombre, apellido, edad, altura, peso });
+  renderPeople();
+  personForm.reset();
+}
+
+function removePerson(index) {
+  people.splice(index, 1);
+  renderPeople();
+}
+
+personForm.addEventListener('submit', addPerson);
+
+personTableBody.addEventListener('click', (event) => {
+  const target = event.target;
+  if (target.matches('.delete-button')) {
+    const index = Number(target.dataset.index);
+    removePerson(index);
+  }
+});
+
+renderPeople();
