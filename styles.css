@@ -1,4 +1,6 @@
-
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -71,7 +73,6 @@ body {
   transform: translateY(-3px);
 }
 
-
 .secondary-link {
   color: #f1faee;
   text-decoration: none;
@@ -79,7 +80,6 @@ body {
   padding: 8px 16px;
   border-radius: 999px;
 }
-
 
 .cards-grid {
   display: flex;
@@ -129,11 +129,9 @@ button {
   font-size: 1rem;
 }
 
-
 button:hover {
   background: #1d3557;
 }
-
 
 .form-card label {
   display: block;
