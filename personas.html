@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="page-header">
+    <div>
+      <h1>Personas</h1>
+      <p>Formulario y tabla de personas con DOM y eventos.</p>
+    </div>
+    <a href="index.html" class="secondary-link">Volver al índice</a>
+  </header>
+
+  <main class="page-main">
+    <section class="form-card">
+      <h2>Agregar persona</h2>
+      <form id="personForm">
+        <label>Nombre <input type="text" id="nombre" required></label>
+        <label>Apellido <input type="text" id="apellido" required></label>
+        <label>Edad <input type="number" id="edad" min="1" required></label>
+        <label>Altura (cm) <input type="number" id="altura" min="1" required></label>
+        <label>Peso (kg) <input type="number" id="peso" min="1" required></label>
+        <button type="submit">Agregar</button>
+      </form>
+    </section>
